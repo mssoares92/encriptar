@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <header>
+            <img class="logoAlura" src="assets/logoAlura.png" alt="logoAlura">
+            <h1>Encriptador</h1>
+        </header>
+                <main class="layout_apresentacao" >
+
+                    <!-- Seção Esquerda, onde palavra Encriptada é digitada -->
+                    <section class="main_content_left" location.reload()>
+                        <textarea class="palavra_digitada" cols="41" rows="4" placeholder="Digite seu texto..."></textarea>
+                    
+                        <div class="informacao">
+                            <img class="imgAlerta" src="assets/img_alerta.png" alt="imgAlerta">
+                            <h6>Apensa letras minusculas e sem acento.</h6>
+                        </div>
+                        <!-- Botões de Criptografar e Desencriptografar -->
+                        <div class="botoes">
+                            <button class="btn_criptografar" onclick="btnEncriptar()" >Criptografar</button>
+                            <button class="btn_desincriptografar" onclick="btnDesencriptar()">Descriptografar</button>
+                        </div>
+                    </section>
+
+                    <!-- Seção Direita, onde palavra Encriptada aparece -->
+                    <section class="main_content_right" >
+                        <div>
+                            <textarea class="mensagem_criptografada" cols="41" rows="8"></textarea>
+                        </div>
+                        <!--Botão de Copiar e Reiniciar-->
+                        <div class="botoes_direita">
+                            <button class="btn_copiar" onclick="Copiar()">Copiar</button>
+                        <button class="btn_reiniciar" onclick="btnLimpar()">Reiniciar</button>
+                        </div>
+                    </section>
+                  
+                </main>
+                
+                <script src="script.js"></script>
+</body>
+</html>
